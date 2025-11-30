@@ -234,7 +234,7 @@ body {
   padding: 0.5rem 1.1rem;
 }
 
-.activity {
+/* .activity {
   background: black;
 }
 
@@ -250,7 +250,7 @@ body {
   border: 2px solid red;
   display: block;
   animation: glow 2s infinite alternate;
-}
+} */
 
 @keyframes glow {
   0% {
@@ -282,14 +282,14 @@ body {
 }
 
 .skill-card,
-.project-card,
-.activity-card {
+.project-card {
+/* .activity-card { */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .skill-card:hover,
-.project-card:hover,
-.activity-card:hover {
+.project-card:hover {
+/* .activity-card:hover { */
   transform: translateY(-5px);
   box-shadow: 0 10px 20px black;
 }
@@ -311,7 +311,7 @@ body {
   animation: float 4s ease-in-out infinite;
 }
 
-.discord-banner {
+/* .discord-banner {
   width: 100%;
   border-radius: 15px;
   border: 1px solid grey;
@@ -322,7 +322,7 @@ body {
   margin-top: 0.8rem;
   font-size: 0.85rem;
   color: lightgrey;
-}
+} */
 
 @media (max-width: 768px) {
   body {
@@ -365,9 +365,10 @@ body {
   .contact-grid {
     grid-template-columns: 1fr;
   }
-
+/* 
   .activity-center {
     max-width: 100%;
-  }
+  } */
 }
+
 
