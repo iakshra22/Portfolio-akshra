@@ -1,0 +1,387 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: black;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6vw;
+  background: black;
+  border-bottom: 1px solid grey;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.nav-logo span {
+  color: red;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.85;
+}
+
+.nav-links a:hover {
+  color: red;
+  opacity: 1;
+}
+
+/* Sections */
+.section {
+  padding: 4.5rem 6vw;
+  background: black;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.section-title span {
+  color: red;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 6vw 4rem;
+}
+
+.hero-text {
+  flex: 1 1 320px;
+}
+
+.hero-intro {
+  font-size: 0.95rem;
+  color: lightgrey;
+  margin-bottom: 0.5rem;
+}
+
+.hero-name {
+  font-size: 2.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-name span {
+  color: red;
+}
+
+.hero-subtitle {
+  max-width: 560px;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.7rem 1.4rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  border: 1px solid white;
+  color: white;
+}
+
+.primary-btn {
+  background: red;
+  border-color: red;
+}
+
+.primary-btn:hover {
+  background: darkred;
+}
+
+.secondary-btn {
+  background: transparent;
+}
+
+.secondary-btn:hover {
+  color: red;
+  border-color: red;
+}
+
+/* Hero Right */
+.hero-right {
+  flex: 1 1 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-avatar {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: black;
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-circle {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.avatar-tagline {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  border: 1px solid white;
+}
+
+/* About Section */
+.about-content p {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: black;
+  padding: 1.5rem;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+.skill-card h3 {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.skill-card ul {
+  list-style: none;
+  color: lightgrey;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: black;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.project-card h3 {
+  margin-bottom: 0.7rem;
+  color: white;
+}
+
+.project-card p {
+  color: lightgrey;
+}
+
+.project-tech {
+  margin-top: 0.75rem;
+  color: grey;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.small-btn {
+  font-size: 0.8rem;
+  padding: 0.5rem 1.1rem;
+}
+
+/* Activity Section (Discord Presence) */
+.activity {
+  background: black;
+}
+
+.activity-center {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.discord-banner {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid red;
+  display: block;
+  animation: glow 2s infinite alternate;
+}
+
+/* Card glow animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 8px red;
+  }
+  100% {
+    box-shadow: 0 0 20px red;
+  }
+}
+
+/* Contact Section */
+.contact-item h3 {
+  margin-bottom: 0.3rem;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: red;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  color: grey;
+  background: black;
+}
+
+/* Simple hover animation for cards */
+.skill-card,
+.project-card,
+.activity-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px black;
+}
+
+/* Hero avatar ko halka float animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero-avatar {
+  position: relative;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Discord banner styling */
+.discord-banner {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid grey;
+  display: block;
+}
+
+.activity-note {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: lightgrey;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    row-gap: 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 4rem;
+  }
+
+  .hero-name {
+    font-size: 2.1rem;
+  }
+
+  .hero-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 3rem 5vw;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-center {
+    max-width: 100%;
+  }
+}
